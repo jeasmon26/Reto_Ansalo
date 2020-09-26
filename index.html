@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Reto Ansalo</title>
+</head>
+
+<body>
+    <div class="contenedor" id="contenedor">
+        <main class="main">
+            <div class="container row justify-content-center  p-5 pt-" id="container">
+                <form id="Teclado" class="p-4 border border-dark formulario">
+                    <div class="form-group row">
+                        <div class="col-md-2">
+                            <label for="letras" class="col-md-2 col-form-label" id="label">Letras</label>
+                        </div>
+                        <!-- letras y números -->
+                        <div class="col-12 col-md-9 ml-4">
+                            <input type="text" class="form-control" name="letras" id="letras"
+                                placeholder="Ingrese las Letras de la A a la J">
+                            <p id="letras"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-2">
+                            <label for="numeros" class="col-md-2 col-form-label" id="label">Números</label>
+                        </div>
+                        <div class="col-12 col-md-9 ml-4">
+                            <input type="text" class="form-control" id="numeros"
+                                placeholder="Ingrese los números del 1 al 0">
+                        </div>
+                    </div>
+                    <!-- Temas -->
+                    <div class="col-12">
+                        <div class="col-6"></div>
+                        <div class="col-6 form-group z-margin">
+                            <label class="control-label" for="temaOscuro">Tema oscuro</label>
+                            <input type="checkbox" id="switchDark">
+                            <label for="switchDark" class="lbl"></label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-6"></div>
+                        <div class="col-6 form-group z-margin">
+                            <label class="control-label" for="temaRetro">Tema retro</label>
+                            <input type="checkbox" id="switchRetro">
+                            <label class="lbl" for="switchRetro"></label>
+                        </div>
+                    </div>
+                    <!-- botones -->
+                    <div class="row justify-content-around mt-5" id="botons">
+                        <button id="A" type="submit" class="btn rounded-circle p-3 z-width">A-1</button>
+                        <button id="B" type="submit" class="btn rounded-circle p-3 z-width">B-2</button>
+                        <button id="C" type="submit" class="btn rounded-circle p-3 z-width">C-3</button>
+                    </div>
+                    <div class="row justify-content-around mt-5">
+                        <button id="D" type="submit" class="btn rounded-circle p-3 z-width">D-4</button>
+                        <button id="E" type="submit" class="btn rounded-circle p-3 z-width">E-5</button>
+                        <button id="F" type="submit" class="btn rounded-circle p-3 z-width">F-6</button>
+                    </div>
+                    <div class="row justify-content-around mt-5">
+                        <button id="G" type="submit" class="btn rounded-circle p-3 z-width">G-7</button>
+                        <button id="H" type="submit" class="btn rounded-circle p-3 z-width">H-8</button>
+                        <button id="I" type="submit" class="btn rounded-circle p-3 z-width">I-9</button>
+                    </div>
+                    <div class="row justify-content-around mt-5 mb-5">
+                        <button id="vacio" type="submit" class="btn rounded-circle p-3 z-width">...</button>
+                        <button id="J" type="submit" class="btn rounded-circle p-3 z-width">J-0</button>
+                        <button id="reset" type="submit" class="btn rounded-circle p-3 z-width">reset</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+
+        <footer class="page-footer panel-footer footer">
+            <div class="text-center py-3 container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col">Todos los Derechos Reservados</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/scrip.js"></script>
+
+</body>
+
+</html>

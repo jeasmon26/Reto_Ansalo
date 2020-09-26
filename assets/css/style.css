@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#label {
+    color: black;
+}
+
+.form-control {
+    border: 1px solid black;
+}
+
+/*Switch*/
+/*1*/
+.lbl {
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.lbl::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eeeeee;
+    border-radius: 100px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .2s;
+}
+
+#switchDark:checked+.lbl::after {
+    left: 35px;
+}
+
+#switchDark:checked+.lbl::after {
+    background: #3dcac6;
+}
+
+#switchDark {
+    display: none;
+}
+
+/*2*/
+#switchRetro:checked+.lbl::after {
+    left: 35px;
+}
+
+#switchRetro:checked+.lbl::after {
+    background: #3dcac6;
+}
+
+#switchRetro {
+    display: none;
+}
+
+/* Tema dark */
+
+.container.dark .main {
+    background-color: #333333;
+}
+
+.dark {
+    background-color: #000000 !important;
+}
+
+.contenedor.dark {
+    background-image: url(../imagen/dark.JPG) !important;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn.dark {
+    background-color: rgb(182, 181, 180);
+}
+
+.input.dark {
+    color: #f0f0f0 !important;
+}
+
+.footer.dark,
+.key.dark {
+    background-color: #000000 !important;
+}
+
+.footer.dark>p {
+    color: white;
+}
+
+/* Tema retro */
+.retro {
+    background-color: #ffbc04 !important;
+}
+
+.contenedor.retro {
+    background-image: url(../imagen/retro.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn.retro {
+    background-color: wheat;
+}
+
+.lbl.retro {
+    color: #9e8600 !important;
+}
+
+.input.retro {
+    color: #b4b101bb !important;
+}
+
+.footer.retro,
+.key.retro {
+    background-color: #9e8600 !important;
+}
+
+.footer.retro>p {
+    color: rgb(10, 10, 10);
+}
+
+/*Footer*/
+.footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #333333;
+}
+
+.footer>p {
+    text-align: center;
+}
+
+/*color botones*/
+.btn {
+    background-color: #3dcac6;
+}
